@@ -1,3 +1,4 @@
+import {EightPuzzle} from EightPuzzle;
 var initial = [ [-1,-1,-1,-1,-1],
                 [-1, 2, 3, 4,-1],
                 [-1, 1, 5, 7,-1],
@@ -12,8 +13,8 @@ var goal =    [ [-1,-1,-1,-1,-1],
                 [-1,-1,-1,-1,-1]]
 
 window.onload = function() {
-    var puzzle = new EightPuzzle(initial,[[0,1,2],[3,4,5],[6,7,8]]) 
-    drawPuzzle(puzzle.initial);
+    // var puzzle = new EightPuzzle() ;
+    drawPuzzle(initial);
 }
 
 drawPuzzle = function() {
