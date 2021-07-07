@@ -48,8 +48,8 @@ class PriorityQueue {
         for (let i = 0; i < this.data.length; i++) {
             let priority = this.data[i].priority;
             if (Math.min(min, priority) === priority) {
-            min = priority;
-            index = i;
+                min = priority;
+                index = i;
             }
         }
         return this.data.splice(index, 1)[0].value;
@@ -199,8 +199,8 @@ function score(board){
 
 function generateInit(){
     let board = [[ 1,0,2],
-                [ 6,4,8],
-                [ 5,3,7]];
+                [ 3,4,5],
+                [ 6,7,8]];
     return new State(board, 0, new Point(0,1),null,null);
 }
 
